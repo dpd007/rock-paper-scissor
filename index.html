@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+                   initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissor</title>
+  </head>
+  <body>
+    <section class="game">
+      <div class="inputTurns">
+        <h3>Enter number of turns you want to have</h3>
+        <input type="text" name="turn" id="turn" game-number="" />
+        <button type="button" id="playGameBtn" play-game="0">Play Game</button>
+      </div>
+      <div class="score">
+        <div class="playerScore">
+          <h2>Player</h2>
+          <p class="p-count count" user-points="">0</p>
+        </div>
+        <div class="computerScore" computer-points="">
+          <h2>Computer</h2>
+          <p class="c-count count">0</p>
+        </div>
+      </div>
+
+      <div class="move">Choose your move</div>
+      <div class="movesleft" rounds-left=""></div>
+      <div class="options">
+        <button class="rock" rock="0" computer-choose="">Rock</button>
+        <button class="paper" paper="1" computer-choose="">Paper</button>
+        <button class="scissor" scissor="2" computer-choose="">Scissors</button>
+      </div>
+      <div class="computerChoice"></div>
+
+      <div class="result" round-result=""></div>
+      <div class="gameResult" game-result=""></div>
+
+      <button class="reload"></button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
