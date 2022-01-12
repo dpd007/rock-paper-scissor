@@ -1,100 +1,19 @@
-* {
-  padding: 0;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  font-size: 16px;
+
   margin: 0;
-  box-sizing: border-box;
-  color: black;
+
+  padding: 0;
 }
 
-.game {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-}
-
-.title {
-  position: absolute;
-  top: 0;
-  font-size: 4rem;
-  z-index: 2;
-}
-
-.score {
-  display: flex;
-  width: 30vw;
-  justify-content: space-evenly;
-  position: absolute;
-  top: 25px;
-  z-index: 1;
-}
-
-.p-count,
-.c-count {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-top: -1.5rem;
-}
-
-.options {
-  display: flex;
-  width: 50vw;
-  justify-content: space-evenly;
-  margin-top: 2rem;
-}
-
-.rock,
-.paper,
-.scissor {
-  padding: 0.8rem;
-  width: 100px;
-  border-radius: 10px;
-  background: rgba(0, 0, 255, 0.548);
-  outline: none;
-  border-color: green;
-  border: none;
-  cursor: pointer;
-  color: #fff;
-}
-
-.move {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.reload {
+.game-container {
   display: none;
-  margin-top: 2rem;
-  padding: 1rem;
-  background: green;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
 }
 
-.result {
-  margin-top: 20px;
-  font-size: 1.2rem;
-}
-.computerChoice {
-  margin-top: 20px;
-  font-size: 1.2rem;
-}
-.inputTurns input {
-  margin-top: 20px;
-  padding: 0.8rem;
-  font-size: 1rem;
-}
-#playGameBtn {
-  padding: 0.8rem;
-  width: 100px;
-  border-radius: 10px;
-  background: rgba(0, 0, 255, 0.548);
-  outline: none;
-  border-color: green;
-  border: none;
-  cursor: pointer;
-  color: #fff;
+#game-result,
+#round-result {
+  display: none;
 }

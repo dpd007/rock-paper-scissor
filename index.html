@@ -2,47 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,
-                   initial-scale=1.0"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Rock Paper Scissor</title>
   </head>
   <body>
-    <section class="game">
-      <div class="inputTurns">
-        <h3>Enter number of turns you want to have</h3>
-        <input type="text" name="turn" id="turn" game-number="" />
-        <button type="button" id="playGameBtn" play-game="0">Play Game</button>
+    <h1 class="header">Rock Paper Scissors</h1>
+
+    <label for="game-number">Number of rounds:-</label>
+
+    <input
+      type="number"
+      name="game-number"
+      id="game-number"
+      data-ns-test="game-number"
+    />
+
+    <button id="play-game" data-ns-test="play-game" onclick="playGame()">
+      Play
+    </button>
+
+    <div class="game-container" id="game-container">
+      <div>
+        <button data-ns-test="rock" id="rock" value="0">rock</button>
+
+        <button data-ns-test="paper" id="paper" value="1">paper</button>
+
+        <button data-ns-test="scissors" id="scissors" value="2">
+          scissors
+        </button>
       </div>
-      <div class="score">
-        <div class="playerScore">
-          <h2>Player</h2>
-          <p class="p-count count" user-points="">0</p>
-        </div>
-        <div class="computerScore" computer-points="">
-          <h2>Computer</h2>
-          <p class="c-count count">0</p>
-        </div>
+
+      <div>
+        Computer choose :-
+
+        <span data-ns-test="computer-choose" id="computer-choose"></span>
       </div>
 
-      <div class="move">Choose your move</div>
-      <div class="movesleft" rounds-left=""></div>
-      <div class="options">
-        <button class="rock" rock="0" computer-choose="">Rock</button>
-        <button class="paper" paper="1" computer-choose="">Paper</button>
-        <button class="scissor" scissor="2" computer-choose="">Scissors</button>
+      <span id="round-result" data-ns-test="round-result"> WON </span>
+
+      <div>
+        User Points :-
+
+        <span data-ns-test="user-points" id="user-points">0</span>
+
+        Computer Points :-
+
+        <span data-ns-test="computer-points" id="computer-points">0</span>
       </div>
-      <div class="computerChoice"></div>
 
-      <div class="result" round-result=""></div>
-      <div class="gameResult" game-result=""></div>
+      <div>
+        Rounds Left :-
 
-      <button class="reload"></button>
-    </section>
+        <span data-ns-test="rounds-left" id="rounds-left">0</span>
+      </div>
+    </div>
 
+    <div id="game-result" data-ns-test="game-result">WON</div>
     <script src="script.js"></script>
   </body>
 </html>
